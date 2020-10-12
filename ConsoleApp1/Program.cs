@@ -11,8 +11,14 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            int A = 1;
-            int B = 2;
+            Console.WriteLine("Entrer le premier nombre");
+            string var1 = Console.ReadLine();
+            int.TryParse(var1, out int A);
+
+            Console.WriteLine("Entrer le second nombre");
+            string var2 = Console.ReadLine();
+            int.TryParse(var2,out int B);
+
             Add(A, B);
             Sous(A, B);
         }
